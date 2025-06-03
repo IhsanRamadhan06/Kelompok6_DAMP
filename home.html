@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studee - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="homeStyle.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid p-0">
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  
+  <div class="row g-0">
+    <!-- Sidebar -->
+    <div class="col-md-2 sidebar" id="sidebar">
+      <div class="logo-section">
+        <img src="logo.png" alt="Studee Logo">
+      </div>
+      <button class="btn active" onclick="location.href='home.html'">🏠 Home</button>
+      <button class="btn" onclick="location.href='kelas.html'">📚 Kelas</button>
+      <button class="btn" onclick="location.href='modul.html'">📘 Modul</button>
+      <button class="btn" onclick="location.href='forumDiskusi.html'">💬 Forum Diskusi</button>
+      <button class="btn" onclick="location.href='evaluasi.html'">📝 Evaluasi</button>
+      <button class="btn" onclick="location.href='prestasi.html'">🏆 Prestasi</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 main-content">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-nav-toggle" id="mobileNavToggle">
+            ⋮
+          </button>
+          <h5>🏠 Home</h5>
+        </div>
+        <input type="text" class="form-control search-bar" placeholder="🔍 Cari kelas, modul, atau materi...">
+        <div>
+          <span class="ms-3">👤 Profile</span>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Selamat Datang di <span class="highlight">Studee</span></h2>
+            <p>Platform pembelajaran digital terpercaya dengan ribuan materi berkualitas untuk mendukung perjalanan akademik Anda</p>
+            <button class="btn btn-start">Mulai Belajar</button>
+          </div>
+          <div class="hero-visual">
+            <svg class="hero-image" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+              <!-- Illustration of students learning -->
+              <rect x="50" y="50" width="200" height="120" rx="10" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+              <circle cx="100" cy="90" r="20" fill="#fcd12a"/>
+              <circle cx="200" cy="90" r="20" fill="#fcd12a"/>
+              <rect x="120" y="100" width="60" height="40" rx="5" fill="rgba(255,255,255,0.2)"/>
+              <text x="150" y="120" text-anchor="middle" fill="white" font-size="12" font-family="Arial">📚</text>
+              <text x="150" y="135" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Learning</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Access -->
+      <div class="quick-access">
+        <h5>Akses Cepat</h5>
+        <div class="row g-3">
+          <div class="col-lg-3 col-md-6 col-6">
+            <div class="quick-card">
+              <div class="icon">📚</div>
+              <h6>Kelas</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <div class="quick-card">
+              <div class="icon">📘</div>
+              <h6>Modul</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <div class="quick-card">
+              <div class="icon">📝</div>
+              <h6>Evaluasi</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <div class="quick-card">
+              <div class="icon">🏆</div>
+              <h6>Prestasi</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <div class="features-section">
+        <h4 class="features-title">Apa aja sih yang bakat kamu dapetin?</h4>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">📹</div>
+              <h6>Live Class</h6>
+              <p>Nikmati kelas pembelajaran yang berlangsung interaktif dan dinamis dengan mentor terbaik yang akan di di</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">📖</div>
+              <h6>Study Case</h6>
+              <p>Pelajari pembelajaran yang berlangsung interaktif dan dinamis dengan mentor terbaik yang akan di di</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">❓</div>
+              <h6>Quiz</h6>
+              <p>Nikmati kelas pembelajaran yang berlangsung interaktif dan dinamis dengan mentor terbaik yang akan di di</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="icon">📄</div>
+              <h6>Catatan Materi</h6>
+              <p>Pelajari pembelajaran yang berlangsung interaktif dan dinamis dengan mentor terbaik yang akan di di</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="testimonials">
+        <h5>Kata mereka pengguna Studee</h5>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="testimonial-card">
+              <div class="quote">"Sangat membantu sekali dalam pembelajaran saya. Materi yang diberikan sangat lengkap dan mudah dipahami. Terima kasih Studee!"</div>
+              <div class="author">👤 Arka Rizky <br><small>Mahasiswa Teknik Informatika</small></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="testimonial-card">
+              <div class="quote">"Platform yang sangat baik untuk belajar. Interface yang user-friendly dan konten yang berkualitas membuat proses belajar menjadi menyenangkan."</div>
+              <div class="author">👤 Dara Fitra <br><small>Mahasiswa Sistem Informasi</small></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="testimonial-card">
+              <div class="quote">"Fitur live class sangat membantu untuk bertanya langsung kepada mentor. Materi yang tersedia juga sangat up-to-date dengan kebutuhan industri."</div>
+              <div class="author">👤 Rizky <br><small>Web Developer</small></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="testimonial-card">
+              <div class="quote">"Studee memberikan pengalaman belajar yang berbeda. Dengan berbagai fitur menarik, belajar jadi lebih interaktif dan menyenangkan."</div>
+              <div class="author">👤 Augia Bilbo <br><small>Data Analyst</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Section -->
+      <div class="pricing-section">
+        <h4 class="pricing-title">Tertarik? Langganan yuk !!!</h4>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card">
+              <h6>Paket 1 Bulan</h6>
+              <div class="price">Rp. 125.000</div>
+              <button class="btn btn-pricing">Pilih Paket >>></button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card">
+              <h6>Paket 6 Bulan</h6>
+              <div class="price">Rp. 700.000</div>
+              <button class="btn btn-pricing">Pilih Paket >>></button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card">
+              <h6>Paket 1 Tahun</h6>
+              <div class="price">Rp. 3.350.000</div>
+              <button class="btn btn-pricing">Pilih Paket >>></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h6>🔗 Navigasi</h6>
+            <p><a href="#">Tentang Kami</a><br>
+            <a href="#">Kontak</a><br>
+            <a href="#">FAQ</a><br>
+            <a href="#">Kebijakan Privasi</a><br>
+            <a href="#">Syarat & Ketentuan</a></p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6>📧 Kontak</h6>
+            <p><strong>Email:</strong><br>Studee@ac.id</p>
+            <p><strong>📍 Alamat:</strong><br>Jl. Veteran, Ketawanggede, Lowokwaru<br>Kota Malang, Jawa Timur, Indonesia - 65145</p>
+            <p><strong>📞 Phone:</strong><br>0341-579781</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6>🌐 Social Media</h6>
+            <ul>
+              <li><p><a href="#">Instagram</a></p></li>
+              <li><p><a href="#">LinkedIn</a></p></li>
+              <li><p><a href="#">YouTube</a></p></li>
+              <li><p><a href="#">Tiktok</a></p></li>
+              <li><p><a href="#">Facebook</a></p></li>
+            </ul>
+          </div>
+        </div>
+        <hr style="border-color: rgba(255,255,255,0.3);">
+        <div class="text-center">
+          <small>Copyright © 2025 Studee - Platform Pembelajaran Digital</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Add interactive functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Mobile navigation toggle
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const sidebar = document.getElementById('sidebar');
+    const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+    
+    mobileNavToggle.addEventListener('click', function() {
+      sidebar.classList.toggle('show');
+      mobileNavOverlay.classList.toggle('show');
+    });
+    
+    mobileNavOverlay.addEventListener('click', function() {
+      sidebar.classList.remove('show');
+      mobileNavOverlay.classList.remove('show');
+    });
+    
+    // Close sidebar when clicking on sidebar items on mobile
+    const sidebarBtns = document.querySelectorAll('.sidebar button');
+    sidebarBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        sidebarBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Close mobile sidebar when item is clicked
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove('show');
+          mobileNavOverlay.classList.remove('show');
+        }
+      });
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        sidebar.classList.remove('show');
+        mobileNavOverlay.classList.remove('show');
+      }
+    });
+    
+    // Search functionality
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.addEventListener('focus', function() {
+      this.style.transform = 'scale(1.02)';
+    });
+    
+    searchBar.addEventListener('blur', function() {
+      this.style.transform = 'scale(1)';
+    });
+    
+    // Quick access cards interaction
+    const quickCards = document.querySelectorAll('.quick-card');
+    quickCards.forEach(card => {
+      card.addEventListener('click', function() {
+        console.log('Quick access clicked:', this.querySelector('h6').textContent);
+      });
+    });
+    
+    // Feature cards interaction
+    const featureCards = document.querySelectorAll('.feature-card');
+    featureCards.forEach(card => {
+      card.addEventListener('click', function() {
+        console.log('Feature clicked:', this.querySelector('h6').textContent);
+      });
+    });
+    
+    // Pricing buttons
+    const pricingBtns = document.querySelectorAll('.btn-pricing');
+    pricingBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const packageName = this.closest('.pricing-card').querySelector('h6').textContent;
+        alert('Memilih ' + packageName);
+      });
+    });
+    
+    // Start learning button
+    const startBtn = document.querySelector('.btn-start');
+    startBtn.addEventListener('click', function() {
+      alert('Memulai perjalanan belajar Anda!');
+    });
+  });
+</script>
+
+</body>
+</html>

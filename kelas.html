@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studee - Kelas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="kelasStyle.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid p-0">
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  
+  <div class="row g-0">
+    <!-- Sidebar -->
+    <div class="col-md-2 sidebar" id="sidebar">
+      <div class="logo-section">
+        <img src="logo.png" alt="Studee Logo">
+      </div>
+      <button class="btn" onclick="location.href='home.html'">🏠 Home</button>
+      <button class="btn active" onclick="location.href='kelas.html'">📚 Kelas</button>
+      <button class="btn" onclick="location.href='modul.html'">📘 Modul</button>
+      <button class="btn" onclick="location.href='forumDiskusi.html'">💬 Forum Diskusi</button>
+      <button class="btn" onclick="location.href='evaluasi.html'">📝 Evaluasi</button>
+      <button class="btn" onclick="location.href='prestasi.html'">🏆 Prestasi</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 main-content">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-nav-toggle" id="mobileNavToggle">
+            ⋮
+          </button>
+          <h5>📚 Kelas</h5>
+        </div>
+        <input type="text" class="form-control search-bar" placeholder="🔍 Search anything">
+        <div>
+          <span class="ms-3">👤 Profile</span>
+        </div>
+      </div>
+
+      <!-- Filter & Sort -->
+      <div class="filter-section">
+        <div class="d-flex align-items-center flex-wrap">
+          <button class="btn btn-outline-primary me-3">🔍 Filter</button>
+          <div class="badge bg-light text-dark">Mata Kuliah</div>
+          <div class="badge bg-light text-dark">Live Class</div>
+          <div class="badge bg-light text-dark">Live Class Record</div>
+          <button class="btn btn-outline-secondary ms-auto">⚡ Sort</button>
+        </div>
+      </div>
+
+      <!-- Kelas Cards -->
+      <div class="kelas-container">
+        <div class="row g-4">
+          <!-- Pemrograman -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card programming">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">💻</div>
+                  <h6>Pemrograman</h6>
+                  <p>Dasar-dasar pemrograman</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Statistika -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card statistics">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">📊</div>
+                  <h6>Statistika</h6>
+                  <p>Analisis data dan probabilitas</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pemodelan Bisnis -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card business">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">💼</div>
+                  <h6>Pemodelan Bisnis</h6>
+                  <p>Strategi dan model bisnis</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sistem Basis Data -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card database">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">🗄️</div>
+                  <h6>Sistem Basis Data</h6>
+                  <p>Database dan manajemen data</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Jaringan Komputer -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card network">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">🌐</div>
+                  <h6>Jaringan Komputer</h6>
+                  <p>Teknologi jaringan dan internet</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- UI/UX -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card design">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">🎨</div>
+                  <h6>UI/UX</h6>
+                  <p>Desain antarmuka pengguna</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pemrograman Web -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card web">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">🌍</div>
+                  <h6>Pemrograman Web</h6>
+                  <p>HTML, CSS, dan JavaScript</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Kalkulus -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card math">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">📐</div>
+                  <h6>Kalkulus</h6>
+                  <p>Matematika tingkat lanjut</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sistem Operasi -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="kelas-card network">
+              <div class="card-header">
+                <div class="card-content">
+                  <div class="card-icon">⚙️</div>
+                  <h6>Sistem Operasi</h6>
+                  <p>Konsep dan implementasi OS</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn-learn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h6>🔗 Navigasi</h6>
+            <p><a href="#">Tentang Kami</a><br>
+            <a href="#">Kontak</a><br>
+            <a href="#">FAQ</a><br>
+            <a href="#">Kebijakan Privasi</a><br>
+            <a href="#">Syarat & Ketentuan</a></p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6>📧 Kontak</h6>
+            <p><strong>Email:</strong><br>Studee@ac.id</p>
+            <p><strong>📍 Alamat:</strong><br>Jl. Veteran, Ketawanggede, Lowokwaru<br>Kota Malang, Jawa Timur, Indonesia - 65145</p>
+            <p><strong>📞 Phone:</strong><br>0341-579781</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6>🌐 Social Media</h6>
+            <ul>
+              <li><p><a href="#">Instagram</a></p></li>
+              <li><p><a href="#">LinkedIn</a></p></li>
+              <li><p><a href="#">YouTube</a></p></li>
+              <li><p><a href="#">Tiktok</a></p></li>
+              <li><p><a href="#">Facebook</a></p></li>
+            </ul>
+          </div>
+        </div>
+        <hr style="border-color: rgba(255,255,255,0.3);">
+        <div class="text-center">
+          <small>Copyright © 2025 Studee - Platform Pembelajaran Digital</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Add interactive functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Mobile navigation toggle
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const sidebar = document.getElementById('sidebar');
+    const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+    
+    mobileNavToggle.addEventListener('click', function() {
+      sidebar.classList.toggle('show');
+      mobileNavOverlay.classList.toggle('show');
+    });
+    
+    mobileNavOverlay.addEventListener('click', function() {
+      sidebar.classList.remove('show');
+      mobileNavOverlay.classList.remove('show');
+    });
+    
+    // Close sidebar when clicking on sidebar items on mobile
+    const sidebarBtns = document.querySelectorAll('.sidebar button');
+    sidebarBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        sidebarBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Close mobile sidebar when item is clicked
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove('show');
+          mobileNavOverlay.classList.remove('show');
+        }
+      });
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        sidebar.classList.remove('show');
+        mobileNavOverlay.classList.remove('show');
+      }
+    });
+    
+    // Filter badges
+    const badges = document.querySelectorAll('.badge');
+    badges.forEach(badge => {
+      badge.addEventListener('click', function() {
+        badges.forEach(b => {
+          b.classList.remove('bg-primary', 'text-white');
+          b.classList.add('bg-light', 'text-dark');
+        });
+        this.classList.remove('bg-light', 'text-dark');
+        this.classList.add('bg-primary', 'text-white');
+      });
+    });
+    
+    // Search functionality
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.addEventListener('focus', function() {
+      this.style.transform = 'scale(1.02)';
+    });
+    
+    searchBar.addEventListener('blur', function() {
+      this.style.transform = 'scale(1)';
+    });
+    
+    // Card hover effects
+    const kelasCards = document.querySelectorAll('.kelas-card');
+    kelasCards.forEach(card => {
+      card.addEventListener('click', function() {
+        console.log('Kelas clicked:', this.querySelector('h6').textContent);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

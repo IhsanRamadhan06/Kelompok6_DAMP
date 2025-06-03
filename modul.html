@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studee - Modul</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="modulStyle.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid p-0">
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  
+  <div class="row g-0">
+    <!-- Sidebar -->
+    <div class="col-md-2 sidebar" id="sidebar">
+      <div class="logo-section">
+        <img src="logo.png" alt="Studee Logo">
+      </div>
+      <button class="btn" onclick="location.href='home.html'">🏠 Home</button>
+      <button class="btn" onclick="location.href='kelas.html'">📚 Kelas</button>
+      <button class="btn active" onclick="location.href='modul.html'">📘 Modul</button>
+      <button class="btn" onclick="location.href='forumDiskusi.html'">💬 Forum Diskusi</button>
+      <button class="btn" onclick="location.href='evaluasi.html'">📝 Evaluasi</button>
+      <button class="btn" onclick="location.href='prestasi.html'">🏆 Prestasi</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 main-content">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-nav-toggle" id="mobileNavToggle">
+            ⋮
+          </button>
+          <h5>📘 Modul Pembelajaran</h5>
+        </div>
+        <input type="text" class="form-control search-bar" placeholder="🔍 Cari modul, materi, atau topik...">
+        <div>
+          <span class="ms-3">👤 Profile</span>
+        </div>
+      </div>
+
+      <!-- Filter & Sort -->
+      <div class="filter-section">
+        <div class="d-flex align-items-center flex-wrap">
+          <button class="btn btn-outline-primary me-3">🔍 Filter</button>
+          <div class="badge bg-light text-dark">Catatan Materi</div>
+          <div class="badge bg-light text-dark">Study Case</div>
+          <div class="badge bg-light text-dark">Bank Soal</div>
+          <button class="btn btn-outline-secondary ms-auto">⚡ Sort</button>
+        </div>
+      </div>
+
+      <!-- Modul Cards -->
+      <div class="modul-container">
+        <div class="row g-4">
+          <!-- Pemrograman Dasar -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=150&h=150&fit=crop&crop=center" alt="Programming" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>Pemrograman Dasar</h6>
+                    <div class="modul-card-description">Pelajari konsep dasar pemrograman dengan pendekatan praktis dan mudah dipahami</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pemrograman Web -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=150&h=150&fit=crop&crop=center" alt="Web Development" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>Pemrograman Web</h6>
+                    <div class="modul-card-description">Bangun website modern dengan HTML, CSS, JavaScript dan framework terkini</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Kalkulus -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=150&h=150&fit=crop&crop=center" alt="Calculus" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>Kalkulus</h6>
+                    <div class="modul-card-description">Eksplorasi konsep limit, turunan, dan integral dalam matematika tingkat lanjut</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pemrograman SQL -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=150&fit=crop&crop=center" alt="Database" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>Pemrograman SQL</h6>
+                    <div class="modul-card-description">Menguasai database dengan query SQL dan pengelolaan data efisien</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Statistika -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=150&fit=crop&crop=center" alt="Statistics" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>Statistika</h6>
+                    <div class="modul-card-description">Analisis data dan probabilitas untuk pengambilan keputusan yang tepat</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Akuntansi -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=150&h=150&fit=crop&crop=center" alt="Accounting" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>Akuntansi</h6>
+                    <div class="modul-card-description">Dasar-dasar akuntansi untuk bisnis dan pengelolaan keuangan perusahaan</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Jaringan Komputer -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=150&h=150&fit=crop&crop=center" alt="Network" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>Jaringan Komputer</h6>
+                    <div class="modul-card-description">Memahami arsitektur jaringan, protokol, dan keamanan sistem komputer</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- UI/UX Design -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=150&h=150&fit=crop&crop=center" alt="UI/UX" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>UI/UX Design</h6>
+                    <div class="modul-card-description">Desain antarmuka yang user-friendly dan pengalaman pengguna yang optimal</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Algoritma Struktur Data -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="modul-card">
+              <div class="modul-card-content">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=150&h=150&fit=crop&crop=center" alt="Algorithms" class="modul-card-image">
+                <div class="modul-card-text">
+                  <div>
+                    <h6>Algoritma Struktur Data</h6>
+                    <div class="modul-card-description">Konsep algoritma efisien dan struktur data untuk optimasi program</div>
+                  </div>
+                  <button class="btn-yellow">Selengkapnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h6>🔗 Navigasi</h6>
+            <p><a href="#">Tentang Kami</a><br>
+            <a href="#">Kontak</a><br>
+            <a href="#">FAQ</a><br>
+            <a href="#">Kebijakan Privasi</a><br>
+            <a href="#">Syarat & Ketentuan</a></p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6>📧 Kontak</h6>
+            <p><strong>Email:</strong><br>Studee@ac.id</p>
+            <p><strong>📍 Alamat:</strong><br>Jl. Veteran, Ketawanggede, Lowokwaru<br>Kota Malang, Jawa Timur, Indonesia - 65145</p>
+            <p><strong>📞 Phone:</strong><br>0341-579781</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6>🌐 Social Media</h6>
+            <ul>
+              <li><p><a href="#">Instagram</a></p></li>
+              <li><p><a href="#">LinkedIn</a></p></li>
+              <li><p><a href="#">YouTube</a></p></li>
+              <li><p><a href="#">Tiktok</a></p></li>
+              <li><p><a href="#">Facebook</a></p></li>
+            </ul>
+          </div>
+        </div>
+        <hr style="border-color: rgba(255,255,255,0.3);">
+        <div class="text-center">
+          <small>Copyright © 2025 Studee - Platform Pembelajaran Digital</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Add interactive functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Mobile navigation toggle
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const sidebar = document.getElementById('sidebar');
+    const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+    
+    mobileNavToggle.addEventListener('click', function() {
+      sidebar.classList.toggle('show');
+      mobileNavOverlay.classList.toggle('show');
+    });
+    
+    mobileNavOverlay.addEventListener('click', function() {
+      sidebar.classList.remove('show');
+      mobileNavOverlay.classList.remove('show');
+    });
+    
+    // Close sidebar when clicking on sidebar items on mobile
+    const sidebarBtns = document.querySelectorAll('.sidebar button');
+    sidebarBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        sidebarBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Close mobile sidebar when item is clicked
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove('show');
+          mobileNavOverlay.classList.remove('show');
+        }
+      });
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        sidebar.classList.remove('show');
+        mobileNavOverlay.classList.remove('show');
+      }
+    });
+    
+    // Filter badges
+    const badges = document.querySelectorAll('.badge');
+    badges.forEach(badge => {
+      badge.addEventListener('click', function() {
+        badges.forEach(b => {
+          b.classList.remove('bg-primary', 'text-white');
+          b.classList.add('bg-light', 'text-dark');
+        });
+        this.classList.remove('bg-light', 'text-dark');
+        this.classList.add('bg-primary', 'text-white');
+      });
+    });
+    
+    // Search functionality
+    const searchBar = document.querySelector('.search-bar');
+    searchBar.addEventListener('focus', function() {
+      this.style.transform = 'scale(1.02)';
+    });
+    
+    searchBar.addEventListener('blur', function() {
+      this.style.transform = 'scale(1)';
+    });
+  });
+</script>
+
+</body>
+</html>
